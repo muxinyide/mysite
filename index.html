@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网页</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .about {
-            margin-top: 20px;
-        }
-        .skills {
-            background-color: #e9e9e9;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills ul li {
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .contact {
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的个人网页</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .nav {
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  .nav a:hover {
+    color: #ddd;
+  }
+  .main {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+  }
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>我的个人网页</h1>
-        </header>
-        <div class="about">
-            <h2>关于我</h2>
-            <p>你好，我是一个热爱前端开发的程序员。这里是我的个人网页，展示一些我的项目和技能。</p>
-        </div>
-        <div class="skills">
-            <h2>技能</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-        </div>
-        <div class="contact">
-            <h2>联系方式</h2>
-            <p>邮箱：example@example.com</p>
-            <p>电话：123-456-7890</p>
-        </div>
-    </div>
+
+<div class="header">
+  <h1>欢迎来到我的个人网页</h1>
+</div>
+
+<div class="nav">
+  <a href="#home">首页</a>
+  <a href="#about">关于我</a>
+  <a href="#services">服务</a>
+  <a href="#contact">联系方式</a>
+</div>
+
+<div class="main" id="home">
+  <h2>首页</h2>
+  <p>这里是我的个人网页的首页，欢迎您。</p>
+</div>
+
+<div class="main" id="about">
+  <h2>关于我</h2>
+  <p>我是专业的网页设计师，拥有多年工作经验。</p>
+</div>
+
+<div class="main" id="services">
+  <h2>服务</h2>
+  <p>我提供以下服务：网页设计、前端开发、UI/UX设计。</p>
+</div>
+
+<div class="main" id="contact">
+  <h2>联系方式</h2>
+  <p>邮箱：example@example.com</p>
+  <p>电话：123-456-7890</p>
+</div>
+
+<div class="footer">
+  <p>版权所有 &copy; 2023 我的个人网页</p>
+</div>
+
 </body>
 </html>
